@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <style>
+    body {
+      padding-top: 56px;
+      /* ajuste para a barra de navegação */
+    }
+    .header02{
+      height: 50px;
+      
+    }
+    .header02 ul{
+      margin-left: -30%;
+    }
+    .car-card {
+      margin-bottom: 20px;
+    }
+
+    .carousel-inner img {
+      height: 500px;
+      width: 100%;
+    }
+
+    .carousel-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      /* Cor do texto */
+      font-size: 24px;
+      text-align: center;
+    }
+    .card-img-top {
+      height: 200px;
+      /* Ajuste a altura conforme necessário */
+      object-fit: cover;
+    }
+    footer {
+      border-top: 1px solid #999;
+      /* Cor da borda branca (pode ajustar a cor conforme necessário) */
+    }
+  </style>
+  <style>
+    @media (max-width: 768px) {
+      .carousel-inner img {
+        max-height: 250px; /* Ajuste a altura conforme necessário */
+        margin-top: -5px;
+      }
+    }
+    @media (max-width: 768px) {
+      .carousel1 {
+        margin-top: -30px; /* Subir 10 unidades */
+        max-height: 300px;
+      }
+    }
+    @media (max-width: 768px) {
+      .carousel-text{
+        font-size: 12px;
+      }
+  }
+    @media (max-width: 768px) {
+      .carousel-control-prev,
+      .carousel-control-next {
+        top: 30%;
+        transform: translateY(-50%);
+      }
+    }
+  </style>
+
+  <title>Mir Mobiliario</title>
+</head>
+<body>
+  <section class="header02" style="margin-top: -4.3%; "><%- include('../partials/header'); %> </section>
+  <main class="">
+    <!-- Carrossel -->
+   
+<div id="carouselExampleIndicators" class="carousel1 slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="../image/mirsofa2.jpg" alt="Primeiro Slide">
+      <div class="carousel-text">
+        <h1>Bem-vindo a Mir Mobiliarios </h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="../image/mirprincipal.jpg" alt="Segundo Slide">
+      <div class="carousel-text">
+        <h1>Bem-vindo a Mir Mobiliarios </h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="../image/tv-with.jpg" alt="Terceiro Slide">
+      <div class="carousel-text">
+        <h1>Bem-vindo a Mir Mobiliarios </h1>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+
+    <!-- Frase de Boas-Vindas e Descrição da Empresa -->
+    <div class="container mt-5">
+      <h3 class="text-center mb-4 " style="background-color: #999;">Nosso Compromisso</h3>
+      <div class="jumbotron">
+        <p class="lead text-center">
+          <i class="bi bi-paperclip text-primary"></i>
+          Sua escolha confiável de melhores mobilias . Na Mir Mobiliarios, comprometemo-nos
+          em fornecer soluções de mobilias e confiáveis para atender às suas necessidades e fiveres confortavel.
+          Explore
+        </p>
+        <hr class="my-4">
+        <p class="text-center">
+          Estamos aqui para garantir o conforto na sua casa e sua familia atraves de Mobilias de qualidade. compre conosco e experimente a
+          excelência e confortavel
+        </p>
+      </div>
+    </div>
+    <!-- Cards de Mobilias Disponíveis -->
+    <div class="container">
+      <h3 class="text-center mb-4 mt-3" style="background-color: #999;">Nossas Mobilias  </h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card-img-container  px-1">
+            <img src="../image/23309.jpg" class="card-img-top" alt="Mobilia 1">
+          </div>
+          <div class="card-body bg-light">
+            <h5 class="card-title">Congelador</h5>
+            <p class="card-text">
+              <strong>Modelo:</strong> DE-POINT<br>
+              <strong>Qualidade:</strong> Excelente <br>
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="/reserva" class="btn btn-primary">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card-img-container  px-1">
+            <img src="../image/elegant.jpg" class="card-img-top" alt="colchao">
+          </div>
+          <div class="card-body bg-light">
+            <h5 class="card-title">Colchao Elegante</h5>
+            <p class="card-text">
+              <strong>Modelo:</strong> Galaxia<br>
+              <strong>Qualidade:</strong> Excelente<br>
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="/reserva" class="btn btn-primary">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card car-card border-0 ">
+            <img src="../image/wooden.jpg" class="card-img-top" alt="Carro 3">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Cadeiras</h5>
+              <p class="card-text"><strong>Modelo:</strong> Unico<br>
+                <strong>Qualidade:</strong> Excelente<br>
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="/reserva" class="btn btn-primary">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card car-card border-0">
+            <img src="../image/landscape.jpg" class="card-img-top" alt="Carro 4">
+            <div class="card-body bg-light">
+              <h5 class="card-title">TV</h5>
+              <p class="card-text text-justify">
+                <strong>Modelo:</strong> Smart TV<br>
+                <strong>Qualidade:</strong> Excelente<br>
+               
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="/reserva" class="btn btn-primary">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Seção de Viaturas Alugadas com Frequência -->
+<div class="container mt-5">
+  <h3 class="text-center mb-4 " style="background-color: #999;">Mobilias Comprados de Frequencia</h3>
+  <div class="row  bg-light">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/smartTV1.jpg" class="card-img-top" alt="Viatura Alugada 1">
+              <div class="card-body bg-light">
+                  <h5 class="card-title">TV</h5>
+                  <p class="card-text">
+                      <strong>Modelo:</strong> Smart TV Ultra HD<br>  
+                  </p>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary"> ver Detalhes</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/colchao.jpg" class="card-img-top" alt="Viatura Alugada 2">
+              <div class="card-body bg-light">
+                  <h5 class="card-title">Colchoes </h5>
+                  <p class="card-text">
+                      <strong>Modelo:</strong> GALAXIA<br>
+                      <strong>Qualidade:</strong> Excelente<br>
+                  </p>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary"> ver Detalhes</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/10.jpg" class="card-img-top" alt="Viatura Alugada 3">
+              <div class="card-body bg-light">
+                  <h5 class="card-title">Sofa</h5>
+                  <p class="card-text">
+                      <strong>Modelo:</strong> Retratil<br>
+                      <strong>Qualidade</strong> Excelente<br>
+                  </p>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary">ver Detalhes</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/depoint.jpg" class="card-img-top" alt="Viatura Alugada 4">
+              <div class="card-body bg-light">
+                  <h5 class="card-title">Congelador</h5>
+                  <p class="card-text">
+                      <strong>Modelo:</strong> De point <br>
+                      <strong>Qualidade</strong> Excelente<br>
+                  </p>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Seção de Viaturas Alugadas com Frequência -->
+<div class="container mt-5">
+  <h3 class="text-center mb-4 " style="background-color: #999;">Mobiliarios comprados no momento</h3>
+  <div class="row bg-light">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/neat.jpg" class="card-img-top" alt="Viatura Alugada 1">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Colchao</h5>
+                <p class="card-text">
+                    <strong>Modelo:</strong> Galaxia <br>
+                    <strong>Qualidade</strong> Excelente<br>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/refrigerator-closed.jpg" class="card-img-top" alt="Viatura Alugada 2">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Geleira </h5>
+                <p class="card-text">
+                    <strong>Modelo:</strong> De Point <br>
+                    <strong>Qualidade</strong> Excelente<br>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/realistic.jpg" class="card-img-top" alt="Viatura Alugada 3">
+              <div class="card-body bg-light">
+                  <h5 class="card-title">Colchao</h5>
+                  <p class="card-text">
+                      <strong>Modelo:</strong> Galaxia<br>
+                      <strong>Qualidade:</strong> Excelente<br>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-3">
+          <div class="card car-card border-0">
+              <img src="../image/landscape.jpg" class="card-img-top" alt="Viatura Alugada 4">
+              <div class="card-body bg-light">
+                  <h5 class="card-title">TV</h5>
+                  <p class="card-text">
+                      <strong>Modelo:</strong> Smart TV<br>
+                      <strong>Qualiadde</strong> Excelente<br>
+                  </p>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Seção de Contacto com a JJ Investimentos -->
+<div class="container mt-5 mb-4" style="border:1px solid #999; background-color:#00008B;">
+  <h3 class="text-center mb-4 text-white">Contacto com a Mir Mobiliarios</h3>
+  <p class="lead text-center text-white">
+      Entre em contacto conosco para obter mais informações sobre nossos serviços e Mobiliarios.
+  </p>
+  <div class="row"  >
+    <div class="col-md-4 mx-auto">
+        <address class="text-white">
+            <strong>Localização:</strong><br>
+            Cabo Delgado, cidade de Pemba<br>
+            Av 16 de Junho, Bairro de Ingonane<br>
+        </address>
+    </div>
+    <div class="col-md-4 mx-auto text-white">
+        <strong>Contactos:</strong><br>
+         +258 49999555<br>
+         
+    </div>
+    <div class="col-md-4 mx-auto text-white">
+        <strong>Email:</strong><br>
+          mirmobiliario@gmail.com<br>
+    </div>
+</div>
+
+<div class="row mt-4" >
+  <div class="col-md-6 mx-auto">
+      <form>
+          <div class="form-group">
+              <!-- Mapa responsivo -->
+              <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3992.924224643941!2d40.51426411432461!3d-12.972678390846194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1942387f520da89d%3A0x789d9e863b484373!2sPemba%2C%20Mo%C3%A7ambique!5e0!3m2!1sen!2s!4v1647789317864!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+
+</div>
+
+  </main>
+  <footer class="bg-light text-dark text-center py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center">
+            <h5>Redes Sociais</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://web.facebook.com/profile.php?id=100094095468563&sk=friends_likes&locale=pt_BR" target="_blank">
+                  <i class="fab fa-facebook-square fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://wa.me/seunumerodetelefone" target="_blank">
+                  <i class="fab fa-whatsapp-square fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a href="https://www.instagram.com/seuinstagram" target="_blank">
+                  <i class="fab fa-instagram-square fa-2x text-danger"></i>
+                </a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <h5>Acesso Rapido</h5>
+          <ul class="navbar-nav text-white">
+            <li class="nav-item active">
+              <a class="nav-link text-dark px-4" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-4" href="/sobre">Sobre-nos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-4" href="/servico">Serviços</a>
+            </li>
+            
+          </ul>
+        </div>
+       
+          
+        
+      </div>
+    </div>
+    <p style=" border-top: 1px solid #999;">&copy; 2024 Mir Mobiliario. Todos os direitos reservados.</p>
+  </footer>
+  
+  
+  <!-- Scripts do Bootstrap e jQuery -->
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/axios.min.js"></script>
+  <script type="text/javascript" src="../js/popper.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

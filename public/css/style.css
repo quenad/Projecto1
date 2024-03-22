@@ -1,0 +1,44 @@
+body {
+    padding-top: 56px;
+    /* ajuste para a barra de navegação */
+  }
+
+  .car-card {
+    margin-bottom: 20px;
+  }
+
+  .carousel-inner img {
+    height: 500px;
+    width: 100%;
+  }
+
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* Cor do texto */
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .card-img-top {
+    height: 200px;
+    /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+  }
+  footer {
+    border-top: 1px solid #999; /* Cor da borda branca (pode ajustar a cor conforme necessário) */
+  }
+  @media (min-width:387px){
+    .carousel{
+    width:100%;
+    height:200px;
+  }
+  .carousel-inner img {
+    height: 200px;
+    width: 100%;
+  }
+
+  }

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>mir Mobiliarios - Serviços de Imobiliarios</title>
+    
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .jumbotron {
+            background-color: #007bff;
+            color: #ffffff;
+            margin-bottom: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jumbotron img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+        }
+
+        .jumbotron-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .badge{
+            /*background-color: #00008B;*/
+            background-color: #dc3545;
+        }
+
+        .card-header {
+          /*  background-color: #00008B;*/
+                      color:black;
+        }
+
+        footer {
+            border-top: 1px solid #999;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="header02"> <%- include('../partials/header'); %> </section>
+
+    <div class="bg-primary border-1" style="position: relative; width: 100%; height: 500px; overflow: hidden;">
+        <img src="../image/pillow-sofa.jpg" style="width: 100%; height:auto;" alt="Imagem Africana">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
+            <h2 style="margin: 0;">Serviços da Mir Mobiliários</h2>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:5%;">
+        <p class="lead">Sua escolha confiável para soluções das mobílias.</p>
+        <div class="row">
+            <!-- Card Acesso Rápido -->
+            <div class="col-md-4">
+                <div class="card-header bg-light text-black">
+                    <h4 class="mb-0">Acesso Rápido</h4>
+                </div>
+                <div class="card-body bg-light">
+                    <form>
+                       
+                        <div class="form-group">
+                            <p>Tipos de Propriedades</p>
+                            <li>Casa</li>
+                            <li>Apartamento</li>
+                            <li>Escritorio</li>
+                        </div>
+                        
+                        <div class="form-group">
+                            <p>Todas Categorias</p>
+                            <li>Móveis para Sala</li>
+                            <li>Móveis para Quarto</li>
+                            <li>Móveis para Cozinha</li>
+
+                        </div>
+                        <div class="form-group">
+                            <p>Cidade de Pemba</p>
+                            </select>
+                        </div>
+                        <p class="mb-0">Preço: 0-50000 MZN</p>
+                        
+                        <hr style="border-top: 2px solid #007bff; margin-top: 15px;">
+                    </form>
+                </div>
+                <div class="row">
+                    <!-- Novo Card com 3 Cards Verticais -->
+                    <div class="col-md-12 " style="margin-top:50px;">
+                        <div class="card">
+                            <div class="card-header bg-light text-black">
+                                <h4 class="mb-0">Novidades</h4>
+                            </div>
+                            <div class="card-body bg-light">
+                                <!-- Card 1 -->
+                                <div class="d-flex" style="margin-bottom: 20px;">
+                                    <div>
+                                        <img src="../image/sala.jpg" class="card-img-top" alt="Imagem Novo Produto 1" style="width: 100px; height: auto;">
+                                    </div>
+                                    <div style="margin-left: 5px;">
+                                        <h6 class="card-title">Sofas</h6>
+                                        <p class="card-text text-danger">78.000.00MZN</p>
+                                        <p class="card-text text-secondary"><i class="fas fa-map-marker-alt"></i> Pemba</p>
+                                    </div>
+                                    
+                                </div>
+                                <div style="border-bottom: 1px solid #ccc; margin-bottom:10px;">
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="d-flex" style="margin-bottom: 20px; ">
+                                    <div>
+                                        <img src="../image/sofa.jpg" class="card-img-top" alt="Imagem Novo Produto 2" style="width: 100px; height: auto;">
+                                    </div>
+                                    <div style="margin-left: 5px;">
+                                        <h6 class="card-title">Sofa</h6>
+                                        <p class="card-text text-danger">98.000.00 MZN</p>
+                                        <p class="card-text text-secondary"><i class="fas fa-map-marker-alt "></i> Pemba</p>
+                                    </div>
+                                </div>
+                                <div style="border-bottom: 1px solid #ccc; margin-bottom:10px;"">
+                                    </div>
+                            
+                                <!-- Card 3 -->
+                                <div class="d-flex" style="margin-bottom: 20px;">
+                                    <div>
+                                        <img src="../image/elegant.jpg" class="card-img-top" alt="Imagem Novo Produto 3" style="width: 100px; height: auto;">
+                                    </div>
+                                    <div style="margin-left: 5px;">
+                                        <h6 class="card-title">Colchao</h6>
+                                        <p class="card-text text-danger">25.000.00 MZN</p>
+                                        <p class="card-text text-secondary"><i class="fas fa-map-marker-alt"></i> Pemba</p>
+                                    </div>
+                                </div>
+                            </div>                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+            <!-- Segundo Card com 6 Cards -->
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="../image/elegant.jpg" class="card-img-top" alt="Imagem História">
+                            <div class="card-header">
+                                <h4 class="mb-0">Cama</h4>
+                                <p class="card-text text-secondary">Camas de muitas varidades<br>
+                                    <i class="fas fa-map-marker-alt"></i> Pemba</p>
+                            </div>
+                            <div class="card-body bg-light">
+                                <p class="card-text">MirAdmin</p>
+                                <p>
+                                    <p>
+                                        <p><p><p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="../image/refrigerator-closed.jpg" class="card-img-top" alt="Imagem História">
+                            <div class="card-header">
+                                <h4 class="mb-0">Congelador</h4>
+                                <p class="card-text text-secondary">Congelador de Marcas Favoritas: Samsung, Tornado, DePoint, Chrome, OLG,etc <br><i class="fas fa-map-marker-alt "></i> Pemba</p>
+                            </div>
+                            <div class="card-body bg-light">
+                                <p class="card-text">MirAdmin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="../image/landscape.jpg" class="card-img-top" alt="Imagem História">
+                            <!--<span class="badge badge-primary badge-pill position-absolute" style="top: 10px; right: 10px;">R$ 150,00</span>-->
+                            <div class="card-header">
+                                <h4 class="mb-0">TV </h4>
+                                <p class="card-text text-secondary"> TVs de Qualidades: SmartTV,Samusung, etc <br><i class="fas fa-map-marker-alt "></i> Pemba</p>
+                            </div>
+                            <div class="card-body bg-light">
+                                <p class="card-text">MirAdmin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-6 position-relative">
+                        <div class="card">
+                            <img src="../image/wooden.jpg" class="card-img-top" alt="Imagem História">
+                            <div class="card-header">
+                                <h4 class="mb-0">Cadeiras</h4>
+                                <p class="card-text text-secondary">Todas Marcas, Cadeiras para escritorios,casa, quarto, e muito mais<br><i class="fas fa-map-marker-alt "></i> Pemba</p>
+                            </div>
+                            <div class="card-body bg-light">
+                                <p class="card-text">MirAdmin</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 5 -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="../image/sofa.jpg" class="card-img-top" alt="Imagem História">
+                            <div class="card-header">
+                                <h4 class="mb-0">Sofa</h4>
+                                <p class="card-text text-secondary">Aproive ja, os seus sofas de qualidade e marcas favoritas<br><i class="fas fa-map-marker-alt "></i> Pemba</p>
+                            </div>
+                            <div class="card-body bg-light">
+                                <p class="card-text"> MirAdmin
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="../image/colchao.jpg" class="card-img-top" alt="Imagem História">
+                            <div class="card-header">
+                                <h4 class="mb-0">Colchao</h4>
+                                <p class="card-text text-secondary">colchoes resistentes, da marca, com muita qualidade<br><i class="fas fa-map-marker-alt "></i> Pemba</p>
+                            </div>
+                            <div class="card-body bg-light">
+                               MirAdmin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-dark text-center py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="text-center">
+                <h5>Redes Sociais</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://web.facebook.com/profile.php?id=100094095468563&sk=friends_likes&locale=pt_BR" target="_blank">
+                      <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://wa.me/seunumerodetelefone" target="_blank">
+                      <i class="fab fa-whatsapp-square fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item ">
+                    <a href="https://www.instagram.com/seuinstagram" target="_blank">
+                      <i class="fab fa-instagram-square fa-2x text-danger"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Acesso Rapido</h5>
+              <ul class="navbar-nav text-white">
+                <li class="nav-item active">
+                  <a class="nav-link text-dark px-4" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark px-4" href="/sobre">Sobre-nos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark px-4" href="/servico">Serviços</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p style=" border-top: 1px solid #999;">&copy; 2024 Mir Mobiliario. Todos os direitos reservados.</p>
+      </footer>
+
+    <!-- Scripts do Bootstrap e jQuery -->
+    <script type="text/javascript"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

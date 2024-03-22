@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="03E68AD9-3DDE-4085-8698-546AAB83CD68" name="AR3" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-84-42-1D" com_port="2000" bootmode="1" cx="166.000000" cy="114.000000" edit_left="193" edit_top="168">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines />
+    <shapes />
+    <txttips />
+</topo>
+<paper>
+    <PaperID>4A48A5CD-98F0-4d34-A730-C64F73151606</PaperID>
+    <PaperUses>0</PaperUses>
+    <TimeMode>0</TimeMode>
+    <LimitedTimes>0</LimitedTimes>
+    <TimeLeft>0</TimeLeft>
+    <LockPaper>0</LockPaper>
+    <AnswerAfterTimeOut>0</AnswerAfterTimeOut>
+</paper>
